@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 @Component()
 //@Profile("!prod")
-@ConditionalOnProperty(value = "chosen.shape", havingValue = "square")
+@ConditionalOnProperty(value = "chosen.shape", havingValue = "square", matchIfMissing = true)
 public class Square implements Shape{
 
     @Override
